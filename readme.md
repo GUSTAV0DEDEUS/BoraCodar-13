@@ -64,7 +64,7 @@
             <td><a href="#estrutura">Estruturação e Design</a></td>
             <td>1h 35m</td>
             <td align="center">
-            <a href="#commits">3</a></td>
+            <a href="#commits">8</a></td>
         </tr>
         <tr>
             <td>25/03</td>
