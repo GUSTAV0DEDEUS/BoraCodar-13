@@ -1,12 +1,6 @@
-import {createGlobalStyle} from 'style-components'
+import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  *{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
   :root{
     font-size: 62.5%;
 
@@ -27,5 +21,19 @@ export const GlobalStyle = createGlobalStyle`
     /* status color */
     ---status-sucess: #6EE7B7;
     ---status-error: #FB7185;
+  }
+  *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  html,body, #root{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(---gray-900);
+    display: grid;
+    place-items: center;
   }
 `
