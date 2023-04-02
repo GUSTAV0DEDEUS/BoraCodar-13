@@ -64,7 +64,7 @@
             <td><a href="#estrutura">Estruturação e Design</a></td>
             <td>1h 35m</td>
             <td align="center">
-            <a href="#commits">8</a></td>
+            <a href="#commits">9</a></td>
         </tr>
         <tr>
             <td>25/03</td>
@@ -105,12 +105,22 @@
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Purple      | ![#7C3AED](https://via.placeholder.com/10/7C3AED?text=+) #7C3AED |
-| Purple light     | ![#E2D6FF](https://via.placeholder.com/10/E2D6FF?text=+) #E2D6FF |
-| White     | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFF |
-| Black     | ![#403937](https://via.placeholder.com/10/403937?text=+) #403937|
-| Black light     | ![#756966](https://via.placeholder.com/10/756966?text=+) #756966 |
-| Icon color     | ![#C7C7CD](https://via.placeholder.com/10/C7C7CD?text=+) #C7C7CD |
+| Brand Color      | ![#9333EA](https://via.placeholder.com/10/9333EA?text=+) #9333EA |
+| Brand Color Light     | ![#A855F7](https://via.placeholder.com/10/A855F7?text=+) #A855F7 |
+| Gray 900     | ![#1F2937](https://via.placeholder.com/10/1F2937?text=+) #1F2937 |
+| Gray 800     | ![#374151](https://via.placeholder.com/10/374151?text=+) #374151 |
+| Gray 700     | ![#4B5563](https://via.placeholder.com/10/4B5563?text=+) #4B5563 |
+| Gray 600     | ![#111827](https://via.placeholder.com/10/111827?text=+) #111827 |
+| Gray 500     | ![#6B7280](https://via.placeholder.com/10/6B7280?text=+) #6B7280 |
+| Gray 400     | ![#9CA3AF](https://via.placeholder.com/10/9CA3AF?text=+) #9CA3AF |
+| Gray 300     | ![#D1D5DB](https://via.placeholder.com/10/D1D5DB?text=+) #D1D5DB |
+| Gray 200     | ![#E5E7EB](https://via.placeholder.com/10/E5E7EB?text=+) #E5E7EB |
+| Gray 100     | ![#F3F4F6](https://via.placeholder.com/10/F3F4F6?text=+) #F3F4F6 |
+| Gray 50     | ![#F9FAFB](https://via.placeholder.com/10/F9FAFB?text=+) #F9FAFB |
+| Status Sucess     | ![#6EE7B7](https://via.placeholder.com/10/6EE7B7?text=+) #6EE7B7 |
+| Status Error     | ![#FB7185](https://via.placeholder.com/10/FB7185?text=+) #FB7185 |
+
+
 
 
 
