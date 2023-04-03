@@ -67,8 +67,8 @@
             <a href="#commits">9</a></td>
         </tr>
         <tr>
-            <td>25/03</td>
-            <td><a href="#estrutura">Drag and drop</a></td>
+            <td>02/04</td>
+            <td><a href="#estrutura">Design</a></td>
             <td>3h 59m</td>
             <td align="center">
             <a href="#commits">1</a></td>
