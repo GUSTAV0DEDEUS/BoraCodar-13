@@ -1,6 +1,4 @@
-import styled from 'styled-components'
-import CreditCard from '../../../../assets/Credit-card.png'
-
+import styled from "styled-components";
 export const CardContent = styled.form`
   background: var(---gray-800);
   border: 1px solid var(---gray-700);
@@ -9,42 +7,42 @@ export const CardContent = styled.form`
   flex-direction: column;
   gap: 4.8rem;
 
-  .wrapper{
+  .wrapper {
     display: flex;
     gap: 6.8rem;
     align-items: center;
 
-    .inputs{
+    .inputs {
       display: flex;
       flex-direction: column;
       gap: 2.4rem;
       width: 32.8rem;
 
-      .input{
+      .input {
         display: flex;
         flex-direction: column;
       }
 
-      .inputGroup{
+      .inputGroup {
         display: flex;
         align-items: center;
         gap: 1.6rem;
-        .input{
+        .input {
           flex: auto;
         }
-        .small{
+        .small {
           width: 30%;
         }
       }
 
-      label{
+      label {
         font-size: 1.4rem;
         font-weight: 600;
         color: var(---gray-200);
         margin-bottom: 4px;
       }
 
-      input{
+      input {
         background: var(---gray-900);
         border: 1px solid var(---gray-700);
         border-radius: 4px;
@@ -58,24 +56,85 @@ export const CardContent = styled.form`
         font-weight: 400;
         color: var(---gray-400);
       }
-
     }
-    .CardGroup{
+    .CardGroup {
       display: flex;
       flex-direction: column;
       gap: 3.2rem;
       align-items: center;
-      .card{
+      .card {
         width: 28rem;
         height: 16.8rem;
+        position: relative;
 
-        background: url({CreditCard}) no-repeat top center;
-        background-size: cover;
+        .background {
+          position: absolute;
+        }
+        .container {
+          width: 100%;
+          height: 100%;
+          padding: 16px 24px 24px 24px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: absolute;
+          .figures {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            align-items: flex-start;
+            .row {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              .numbers {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                span {
+                  font-size: 1.6rem;
+                  font-weight: 600;
+                  letter-spacing: 4px;
+                  color: var(---gray-50);
+                  display: inline-flex;
+                  gap: 4px;
+                  align-items: center;
+                }
+              }
+              .name {
+                font-family: "Source Sans Pro", sans-serif;
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: rgba(249, 250, 251, 0.5);
+              }
+              .validity {
+                font-family: "Source Sans Pro", sans-serif;
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: rgba(249, 250, 251, 0.5);
+              }
+            }
+          }
+        }
+      }
+      .alert{
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+
+        font-size: 1.4;
+        font-weight: 400;
+        color: var(---gray-200)
       }
     }
   }
 
-  .btn-primary{
+  .btn-primary {
     background: var(---brand-color);
     border-radius: 4px;
 
@@ -88,4 +147,27 @@ export const CardContent = styled.form`
 
     padding: 16px 0;
   }
-`
+  @media (max-width:740px){
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    padding: 24px; 
+    .wrapper{
+      gap: 48px;
+      flex-direction: column-reverse;
+      place-content: center;
+      padding-bottom: 18rem;
+    }
+    .btn-primary{
+      width: calc(100% - 24px * 2);
+      position: absolute;
+      bottom: 5%;
+    }
+    .alert{
+      position: absolute;
+      bottom: 24%;
+      font-size: 1.4rem;
+    }
+  }
+`;

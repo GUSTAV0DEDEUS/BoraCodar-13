@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html,body, #root{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: var(---gray-900);
     display: grid;
     place-items: center;
