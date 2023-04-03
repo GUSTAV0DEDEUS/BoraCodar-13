@@ -6,9 +6,6 @@ import Shield from "../../../../assets/shieldCheck.svg";
 export const Card = () => {
   return (
     <CardContent>
-      <div className="header">
-        <img src={Bandeira} alt="Logo Visa" />
-      </div>
       <div className="wrapper">
         <div className="inputs">
           <div className="input">
@@ -24,8 +21,9 @@ export const Card = () => {
               <label htmlFor="validade">Validade</label>
               <input type="text" id="validade" name="validade" placeholder="mm/aa"/>
             </div>
-            <div className="input">
-              <label htmlFor="CVV">CVV <button><img src={Question} alt="Clique para saber aonde se localiza o Código de verificação" /></button></label>
+            <div className="input small">
+              <label htmlFor="CVV">CVV <img src={Question} alt="Clique para saber aonde se localiza o Código de verificação" /></label>
+              <input type="password" name="CVV" id="CVV" placeholder="***"/>
             </div>
           </div>
         </div>
@@ -48,9 +46,7 @@ export const Card = () => {
           <p><img src={Shield} alt="Ícone de um escudo, colorido de verde" /> Seus dados estão seguros</p>
         </div>
       </div>
-      <div className="footer">
-        <button type="submit">Adicionar Cartão</button>
-      </div>
+      <button type="submit" className="btn-primary">Adicionar Cartão</button>
     </CardContent>
   );
 };
