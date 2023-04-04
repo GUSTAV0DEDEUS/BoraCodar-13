@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 export const CardContent = styled.form`
   background: var(---gray-800);
   border: 1px solid var(---gray-700);
@@ -21,6 +21,15 @@ export const CardContent = styled.form`
       .input {
         display: flex;
         flex-direction: column;
+        small{
+            margin-top: 8px;
+            display: inline-flex;
+            gap: 4px;
+            align-items: center;
+
+            color: var(---status-error);
+            font-size: 1.4rem;
+          }
       }
 
       .inputGroup {
@@ -55,6 +64,14 @@ export const CardContent = styled.form`
         font-size: 1.6rem;
         font-weight: 400;
         color: var(---gray-400);
+        transition: .4s all;
+        
+        &:focus, &:hover{
+          border: 1px solid var(---brand-color)
+        }
+        &.invalid{
+          border: 1px solid var(---status-error);
+        }
       }
     }
     .CardGroup {
@@ -148,6 +165,8 @@ export const CardContent = styled.form`
     padding: 16px 0;
   }
   @media (max-width:740px){
+    
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     position: relative;
@@ -166,8 +185,28 @@ export const CardContent = styled.form`
     }
     .alert{
       position: absolute;
-      bottom: 24%;
+      bottom: 18%;
       font-size: 1.4rem;
     }
   }
 `;
+export const PopUp = styled.article`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  height: 20rem;
+  z-index: 999;
+  background: white;
+
+  display: none;
+  place-items: center;
+  justify-content: center;
+
+  gap: 2rem; 
+  svg{
+    font-size: 10rem;
+    color: green;
+  }
+`

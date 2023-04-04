@@ -1,13 +1,17 @@
-import { CardContent } from "./styles";
+import { CardContent, PopUp } from "./styles";
 import Bandeira from "../../../../assets/bandeira.svg";
 import Cartao from "../../../../assets/cartao.svg";
 import Question from "../../../../assets/question.svg";
 import Shield from "../../../../assets/shieldCheck.svg";
 import CreditCard from "../../../../assets/Credit-card.png";
 import Placeholder from "../../../../assets/placeholder.svg";
-export const Card = () => {
+import  btn from "./validity";
+import {GrValidate} from 'react-icons/gr'
+
+export default function Card (){
+
   return (
-    <CardContent>
+    <CardContent id="form" action="#">
       <div className="wrapper">
         <div className="inputs">
           <div className="input">
@@ -17,7 +21,9 @@ export const Card = () => {
               id="number"
               name="number"
               placeholder="Número como está no cartão"
+
             />
+            <small></small>
           </div>
           <div className="input">
             <label htmlFor="titular">Nome do Titular</label>
@@ -37,6 +43,7 @@ export const Card = () => {
                 name="validade"
                 placeholder="mm/aa"
               />
+              <small></small>
             </div>
             <div className="input small">
               <label htmlFor="CVV">
@@ -46,7 +53,8 @@ export const Card = () => {
                   alt="Clique para saber aonde se localiza o Código de verificação"
                 />
               </label>
-              <input type="password" name="CVV" id="CVV" placeholder="***" />
+              <input type="password" name="CVV" id="CVV" placeholder="***"/>
+              <small></small>
             </div>
           </div>
         </div>
@@ -96,9 +104,16 @@ export const Card = () => {
           </p>
         </div>
       </div>
-      <button type="submit" className="btn-primary">
+      <button type="submit" className="btn-primary" onClick={btn}>
         Adicionar Cartão
       </button>
+      <PopUp>
+        <GrValidate/>
+        <div className="content">
+          <h1>Cartão cadastrado</h1>
+          <p>Prossiga seu cadastro no site</p>
+        </div>
+      </PopUp>
     </CardContent>
   );
 };
