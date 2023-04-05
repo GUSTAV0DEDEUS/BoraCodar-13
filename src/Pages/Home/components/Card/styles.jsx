@@ -162,8 +162,36 @@ export const CardContent = styled.form`
     font-weight: 600;
     font-size: 1.8rem;
 
-    padding: 16px 0;
+    height: 56px;
+
+    cursor: pointer;
+    transition: .4s all;
+
+    display: grid;
+    place-items: center;
+
+    img{
+      animation: 1s rotat linear infinite;
+    }
+    @keyframes rotat{
+      0%{
+        transform: rotate(0deg)
+      }
+      50%{
+        transform: rotate(180deg)
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+    &:hover{
+      background: var(---brand-color-light)
+    }
+    &:focus{
+      outline: 2px solid white;
+    }
   }
+  .btn-primar
   @media (max-width:740px){
     
     overflow-x: hidden;

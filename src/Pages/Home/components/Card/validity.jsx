@@ -1,7 +1,10 @@
+import React, {useState} from "react";
 import Warning from "../../../../assets/Warning.svg";
+
+
 export default function btn() {
   const smalls = document.querySelectorAll("small");
-  const form = document.getElementById("form");
+  
   var btnItem = document.querySelector(".btn-primary");
   var validity = document.querySelector("#validade");
   var CVV = document.querySelector("#CVV");
@@ -49,7 +52,5 @@ export default function btn() {
     `;
     }
   }
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-  });
+
 }

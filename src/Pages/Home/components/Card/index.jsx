@@ -5,10 +5,33 @@ import Question from "../../../../assets/question.svg";
 import Shield from "../../../../assets/shieldCheck.svg";
 import CreditCard from "../../../../assets/Credit-card.png";
 import Placeholder from "../../../../assets/placeholder.svg";
-import  btn from "./validity";
+import Loading from "../../../../assets/spinnerGap.svg";
+import btn from "./validity";
 import {GrValidate} from 'react-icons/gr'
+import { useState, useEffect } from 'react';
 
 export default function Card (){
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const form = document.getElementById("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
+
+    return () => {
+      form.removeEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    }
+  }, []);
+  function handleClick() {
+    setLoading(true);
+  
+    setTimeout(() => {
+      btn();
+      setLoading(false);
+    }, 2000); // tempo de espera em milissegundos
+  }
 
   return (
     <CardContent id="form" action="#">
@@ -104,8 +127,8 @@ export default function Card (){
           </p>
         </div>
       </div>
-      <button type="submit" className="btn-primary" onClick={btn}>
-        Adicionar Cartão
+      <button type="submit" className="btn-primary" onClick={handleClick}>
+        {loading ? <img src={Loading}/> :  "Adicionar Cartão" }
       </button>
       <PopUp>
         <GrValidate/>
