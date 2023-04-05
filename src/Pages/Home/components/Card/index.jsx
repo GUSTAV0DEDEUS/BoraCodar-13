@@ -6,7 +6,7 @@ import Shield from "../../../../assets/ShieldCheck.svg";
 import CreditCard from "../../../../assets/Credit-card.png";
 import sucesso from "../../../../assets/sucesso.png";
 
-import Loading from "../../../../assets/spinnerGap.svg";
+import Loading from "../../../../assets/SpinnerGap.svg";
 import btn from "./validity";
 
 import { useState, useEffect } from 'react';
