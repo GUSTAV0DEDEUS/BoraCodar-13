@@ -138,9 +138,9 @@
 
 <h3 id="page">PageSpeed Insights</h3>
 Dados do computador<br>
-<img  src=".github/pc.jpg" ><br>
+<img  src=".github/pc.png" ><br>
 Dados para os dispositivos movéis<br>
-<img  src=".github/mobile.jpg">
+<img  src=".github/mobile.png">
 <h2 id="melhorias"> Melhorias ao Projeto</h2>
 
 - Temas
