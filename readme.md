@@ -1,4 +1,4 @@
-<h1 align="center">Bora Code 11</h1>
+<h1 align="center">Bora Code 13</h1>
 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap">
   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB">
   <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
@@ -20,7 +20,7 @@
 
 <h2 id="projeto"> Projeto </h2>
 
-> Bora codar 12, desenvolva um kanban, <a href="https://bora-code-12.vercel.app/" >Link para o resultado</a>
+> Bora codar 12, desenvolva um forms de cartão, <a href="https://bora-code-12.vercel.app/" >Link para o resultado</a>
 
 <h2 id="diario"> Diário de bordo </h2>
 <table>
@@ -62,28 +62,35 @@
           <tr>
             <td>01/04</td>
             <td><a href="#estrutura">Estruturação e Design</a></td>
-            <td>1h 35m</td>
+            <td>2h 4m</td>
             <td align="center">
             <a href="#commits">9</a></td>
         </tr>
         <tr>
             <td>02/04</td>
             <td><a href="#estrutura">Design</a></td>
-            <td>3h 59m</td>
+            <td>45m</td>
             <td align="center">
             <a href="#commits">1</a></td>
         </tr>
         <tr>
-            <td>26/03</td>
+            <td>03/04</td>
             <td><a href="#estrutura">Responsividade</a></td>
-            <td>1h 2m</td>
+            <td>1h 21m</td>
             <td align="center">
-            <a href="#commits">1</a></td>
+            <a href="#commits">2</a></td>
         </tr>
         <tr>
-            <td>28/03</td>
-            <td><a href="#estrutura">Finalização +deploy</a></td>
-            <td>50m</td>
+            <td>04/03</td>
+            <td><a href="#estrutura">Máscara nos inputs</a></td>
+            <td>3h 19m</td>
+            <td align="center">
+            <a href="#commits">3</a></td>
+        </tr>
+        <tr>
+            <td>05/03</td>
+            <td><a href="#estrutura">Finzalização e deploy (primeira parte)</a></td>
+            <td>2h 12m</td>
             <td align="center">
             <a href="#commits">1</a></td>
         </tr>
@@ -97,8 +104,6 @@
   <strong>Google Fonts,<strong>
   <strong>Figma,<strong>
   <strong>Wakatime,<strong>
-  <strong>React-dnd,<strong>
-  <strong>Immer,<strong>
   <strong>Pagespeed<strong>
   
 <h3 id="cores">Cores do Projeto</h3>
@@ -128,8 +133,7 @@
 
 | # | Tempo         | linguagem                                      |
 |--| ----------------- | ---------------------------------------------------------------- |
-| # |  5h 46m | JavasScript (react) |
-| # | 39m | css (global.jsx)|
+| # |  9hrs 43mins | JavasScript (react) |
 
 
 <h3 id="page">PageSpeed Insights</h3>
@@ -139,10 +143,10 @@ Dados para os dispositivos movéis<br>
 <img  src=".github/mobile.jpg">
 <h2 id="melhorias"> Melhorias ao Projeto</h2>
 
-- Ligação a um banco de dados
-- Requisão de imagens do banco
-- Usuários
-- Salvar os kanbans
+- Temas
+- Crud simples
+- Validação de bandeira
+- Flip para CVV
 
 <h2 id="destaque">Destaque para alguns códigos</h2>
 <img src=".github/code.png">
