@@ -149,11 +149,12 @@ export default function Card (){
         {loading ? <img src={Loading}/> :  "Adicionar Cartão" }
       </button>
       <PopUp>
-        <GrValidate/>
         <div className="content">
+          <GrValidate/>
           <h1>Cartão cadastrado</h1>
           <p>Prossiga seu cadastro no site</p>
         </div>
+        <button type="button" onClick={""} className="btn">ok</button>
       </PopUp>
     </CardContent>
   );

@@ -187,7 +187,6 @@ export const CardContent = styled.form`
       outline: 2px solid white;
     }
   }
-  .btn-primar
   @media (max-width:740px){
     
     overflow-x: hidden;
@@ -219,18 +218,40 @@ export const PopUp = styled.article`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40rem;
-  height: 20rem;
+  width: 60rem;
+  height: 30rem;
   z-index: 999;
-  background: white;
+  background: var(---gray-900);
+  border-radius: 12px;
 
-  display: none;
-  place-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
 
   gap: 2rem; 
-  svg{
+  .content{
+    display: grid;
+    place-items: center;
+    height: 60%;
+    background-color: var(---status-sucess);
+    border-radius: 12px 12px 0 0;
+    padding: 1rem 0;
+    svg{
     font-size: 10rem;
     color: green;
+    }
+  }
+  .btn{
+    margin: auto;
+    background-color: var(---status-sucess);
+    padding: .5rem 6rem ;
+    border: 0;
+    outline: 0;
+    border-radius: 999px;
+    cursor: pointer;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(---gray-50);
   }
 `
