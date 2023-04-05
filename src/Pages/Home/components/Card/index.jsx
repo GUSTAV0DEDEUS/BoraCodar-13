@@ -1,7 +1,7 @@
 import { CardContent, PopUp } from "./styles";
 import Bandeira from "../../../../assets/bandeira.svg";
 import Cartao from "../../../../assets/cartao.svg";
-import Question from "../../../../assets/question.svg";
+import Question from "../../../../assets/Question.svg";
 import Shield from "../../../../assets/shieldCheck.svg";
 import CreditCard from "../../../../assets/Credit-card.png";
 import sucesso from "../../../../assets/sucesso.png";
