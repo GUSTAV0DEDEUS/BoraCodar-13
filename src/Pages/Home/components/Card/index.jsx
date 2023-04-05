@@ -4,15 +4,18 @@ import Cartao from "../../../../assets/cartao.svg";
 import Question from "../../../../assets/question.svg";
 import Shield from "../../../../assets/shieldCheck.svg";
 import CreditCard from "../../../../assets/Credit-card.png";
-import Placeholder from "../../../../assets/placeholder.svg";
+
+
 import Loading from "../../../../assets/spinnerGap.svg";
 import btn from "./validity";
 import {GrValidate} from 'react-icons/gr'
 import { useState, useEffect } from 'react';
+import showOnCard from "./mask";
 
 export default function Card (){
   const [loading, setLoading] = useState(false);
   useEffect(() => {
+    showOnCard();
     const form = document.getElementById("form");
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -29,10 +32,10 @@ export default function Card (){
   
     setTimeout(() => {
       btn();
+
       setLoading(false);
     }, 2000); // tempo de espera em milissegundos
   }
-
   return (
     <CardContent id="form" action="#">
       <div className="wrapper">
@@ -43,8 +46,14 @@ export default function Card (){
               type="text"
               id="number"
               name="number"
+              maxLength={19}
               placeholder="Número como está no cartão"
-
+              onKeyPress={(e) => {
+                const charCode = e.keyCode || e.which;
+                if (charCode < 48 || charCode > 57) {
+                  e.preventDefault();
+                }
+              }}
             />
             <small></small>
           </div>
@@ -55,6 +64,12 @@ export default function Card (){
               id="titular"
               name="titular"
               placeholder="Nome como está no cartão"
+              onKeyPress={(e) => {
+                const charCode = e.keyCode || e.which;
+                if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) {
+                  e.preventDefault();
+                }
+              }}
             />
           </div>
           <div className="inputGroup">
@@ -65,6 +80,14 @@ export default function Card (){
                 id="validade"
                 name="validade"
                 placeholder="mm/aa"
+                maxLength={5}
+                onKeyPress={(e) => {
+                  const charCode = e.keyCode || e.which;
+                  if ((charCode < 48 || charCode > 57) && charCode !== 47) {
+                    e.preventDefault();
+                  }
+                }
+                }
               />
               <small></small>
             </div>
@@ -76,7 +99,15 @@ export default function Card (){
                   alt="Clique para saber aonde se localiza o Código de verificação"
                 />
               </label>
-              <input type="password" name="CVV" id="CVV" placeholder="***"/>
+              <input type="password" name="CVV" id="CVV" placeholder="***"
+              maxLength={3}
+              onKeyPress={(e) => {
+                const charCode = e.keyCode || e.which;
+                if (charCode < 48 || charCode > 57) {
+                  e.preventDefault();
+                }
+              }}
+              />
               <small></small>
             </div>
           </div>
@@ -95,27 +126,14 @@ export default function Card (){
               <div className="wrapper">
                 <div className="row">
                   <div className="numbers">
-                    <span>4716</span> <span>8039</span>
-                    <span>
-                      02
-                      <img src={Placeholder} alt="Placeholder" />
-                      <img src={Placeholder} alt="Placeholder" />
-                    </span>
-                    <span>
-                      <img src={Placeholder} alt="Placeholder" />
-                      <img src={Placeholder} alt="Placeholder" />
-                      <img src={Placeholder} alt="Placeholder" />
-                      <img src={Placeholder} alt="Placeholder" />
-                    </span>
+                    1234 5678 9123 4567
+                    
                   </div>
                 </div>
                 <div className="row">
-                  <div className="name">Seu Nome aqui</div>
+                  <div className="name">Seu Nome Aqui</div>
                   <div className="validity">
-                    <img src={Placeholder} alt="Placeholder" />
-                    <img src={Placeholder} alt="Placeholder" />{"/"}
-                    <img src={Placeholder} alt="Placeholder" />
-                    <img src={Placeholder} alt="Placeholder" />
+                      02/20                 
                   </div>
                 </div>
               </div>

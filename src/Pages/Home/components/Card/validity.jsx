@@ -10,13 +10,10 @@ export default function btn() {
   var CVV = document.querySelector("#CVV");
   var Numbers = document.querySelector("#number");
   var PopUp = document.querySelector("article");
-  const patternNumbers = /[0-9]{16}/;
-  const patternValidity = /[0-9]{4}/;
-  const patternCVV = /[0-9]{3}/;
   if (
-    Numbers.value.match(patternNumbers) &&
-    validity.value.match(patternValidity) &&
-    CVV.value.match(patternCVV)
+    Numbers.value != "" &&
+    validity.value != "" &&
+    CVV.value != ""
   ) {
     Numbers.classList.remove("invalid");
     smalls[0].innerHTML = ``;
@@ -30,21 +27,21 @@ export default function btn() {
     PopUp.style.display = "flex";
   }
   else {
-    if (!Numbers.value.match(patternNumbers)) {
+    if (!Numbers.value != "") {
       Numbers.classList.add("invalid");
       smalls[0].innerHTML = `
       <img src="${Warning}"/>
       Insira um número de cartão válido
       `;
     }
-    if (!validity.value.match(patternValidity)) {
+    if (!validity.value != "") {
       validity.classList.add("invalid");
       smalls[1].innerHTML = `
     <img src="${Warning}"/>
       Cartão fora de validade 
     `;
     }
-    if (!CVV.value.match(patternCVV)) {
+    if (!CVV.value != "") {
       CVV.classList.add("invalid");
       smalls[2].innerHTML = `
     <img src="${Warning}"/>

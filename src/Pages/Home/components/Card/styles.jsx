@@ -111,17 +111,13 @@ export const CardContent = styled.form`
               justify-content: space-between;
               .numbers {
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
-                span {
-                  font-size: 1.6rem;
-                  font-weight: 600;
-                  letter-spacing: 4px;
-                  color: var(---gray-50);
-                  display: inline-flex;
-                  gap: 4px;
-                  align-items: center;
-                }
+
+                font-size: 1.7rem;
+                font-weight: 600;
+                letter-spacing: 4px;
+                color: var(---gray-50);
+
+                
               }
               .name {
                 font-family: "Source Sans Pro", sans-serif;
