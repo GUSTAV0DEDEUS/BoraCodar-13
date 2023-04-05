@@ -4,11 +4,11 @@ import Cartao from "../../../../assets/cartao.svg";
 import Question from "../../../../assets/question.svg";
 import Shield from "../../../../assets/shieldCheck.svg";
 import CreditCard from "../../../../assets/Credit-card.png";
-
+import sucesso from "../../../../assets/sucesso.png";
 
 import Loading from "../../../../assets/spinnerGap.svg";
 import btn from "./validity";
-import {GrValidate} from 'react-icons/gr'
+
 import { useState, useEffect } from 'react';
 import showOnCard from "./mask";
 
@@ -150,11 +150,13 @@ export default function Card (){
       </button>
       <PopUp>
         <div className="content">
-          <GrValidate/>
+          <img src={sucesso} alt="Icone representando Sucesso na operação" />
           <h1>Cartão cadastrado</h1>
           <p>Prossiga seu cadastro no site</p>
         </div>
-        <button type="button" onClick={""} className="btn">ok</button>
+        <button type="button" onClick={()=>{
+           document.querySelector("article").style.display="none"
+        }} className="btn">ok</button>
       </PopUp>
     </CardContent>
   );

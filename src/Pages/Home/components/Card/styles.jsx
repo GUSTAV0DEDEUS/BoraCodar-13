@@ -80,16 +80,16 @@ export const CardContent = styled.form`
       gap: 3.2rem;
       align-items: center;
       .card {
-        width: 28rem;
-        height: 16.8rem;
+        width: 280px;
+        height: 168px;
         position: relative;
 
         .background {
           position: absolute;
         }
         .container {
-          width: 100%;
-          height: 100%;
+          width: 280px;
+          height:168px;
           padding: 16px 24px 24px 24px;
           display: flex;
           flex-direction: column;
@@ -103,7 +103,6 @@ export const CardContent = styled.form`
           .wrapper {
             display: flex;
             flex-direction: column;
-            gap: 2.4rem;
             align-items: flex-start;
             .row {
               width: 100%;
@@ -223,22 +222,28 @@ export const PopUp = styled.article`
   z-index: 999;
   background: var(---gray-900);
   border-radius: 12px;
+  box-shadow: 0px 9px 20px 0px rgba(0,0,0,0.55);
 
-  display: flex;
+  display: none;
   flex-direction: column;
-
-
   gap: 2rem; 
   .content{
     display: grid;
     place-items: center;
-    height: 60%;
+    height: 70%;
     background-color: var(---status-sucess);
     border-radius: 12px 12px 0 0;
     padding: 1rem 0;
-    svg{
-    font-size: 10rem;
-    color: green;
+    color: var(---gray-50);
+    img{
+      width: 10rem;
+      height: 10rem;
+    }
+    h1{
+      font-size: 2rem;;
+    }
+    p{
+      font-size: 1.4rem;
     }
   }
   .btn{

@@ -1,4 +1,3 @@
-import React, {useState} from "react";
 import Warning from "../../../../assets/Warning.svg";
 
 
